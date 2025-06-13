@@ -1,0 +1,24 @@
+﻿@page "/loginpage"
+@using Bilporten.Services
+@inject BrugereService BrugereService
+@inject NavigationManager navManager
+
+<h3>Login</h3>
+<p style="color:red">@fejl</p>
+<input placeholder="Email" @bind="email" />
+<input placeholder="Password" @bind="password" type="password" />
+<button @onclick="Login">Login</button>
+
+@code {
+    string email = "", password = "";
+    string fejl = "";
+
+    async Task Login()
+    {
+        var bruger = await BrugereService.LoginAsync(email, password);
+        if (bruger == null)
+            fejl = "Forkert login";
+        else
+            navManager.NavigateTo("/loginpage");
+    }
+}

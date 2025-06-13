@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bilporten")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff1445c89e97e5dfd4f62f7e46b6db1cba5cfdde")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bilporten")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bilporten")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
